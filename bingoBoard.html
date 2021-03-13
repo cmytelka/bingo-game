@@ -1,0 +1,99 @@
+<!--
+Name: Claire Mytelka
+Directory ID (NOT numeric one): cmytelka
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bingo</title>
+    <link rel="stylesheet" href="p5.css" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend><strong>1-Dim Bingo</strong></legend>
+        <div id="box">
+          <label
+            >Size: <input type="text" id="bingoSize" size="3" value="10"
+          /></label>
+
+          <label id="red"
+            ><input
+              type="radio"
+              id="redFont"
+              name="color"
+              onclick="changeColor();"
+              checked
+            />
+            Red</label
+          >
+
+          <label id="font"
+            >Font:
+            <select onchange="changeFont();">
+              <option id="arial" selected>Arial</option>
+              <option id="times">Times New Roman</option>
+              <option id="courier">Courier New</option>
+            </select>
+            <br />
+          </label>
+
+          <label id="green"
+            ><input
+              type="radio"
+              id="greenFont"
+              name="color"
+              onclick="changeColor();"
+            />
+            Green</label
+          >
+
+          <label id="textSize"
+            >Font Size:
+            <select onchange="changeSize();">
+              <option id="ten">10 px</option>
+              <option id="twenty" selected>20 px</option>
+              <option id="thirty">30 px</option>
+            </select>
+            <br />
+          </label>
+
+          <label id="blue"
+            ><input
+              type="radio"
+              id="blueFont"
+              name="color"
+              onclick="changeColor();"
+            />
+            Blue</label
+          >
+          <br />
+          <br />
+
+          <button type="button" id="update" onclick="updateBingo();">
+            Update Bingo Board
+          </button>
+          <button type="button" id="call" onclick="callButton();">Call</button>
+          <button type="button" id="reset" onclick="resetButton();">
+            Reset
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <!-- Beginning of "Do not modify the code block" -->
+
+    <!-- put board inside the bingoSpace div element-->
+    <div id="bingoSpace"></div>
+    <div id="callsSpace">
+      <h2 id="nCalls">Calls</h2>
+      <p id="callList"></p>
+    </div>
+    <div id="bingoMessage"></div>
+    <!-- End of "Do not modify the code block" -->
+
+    <script src="p5.js"></script>
+  </body>
+</html>

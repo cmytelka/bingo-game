@@ -1,0 +1,49 @@
+/*
+Name: Claire Mytelka
+Directory ID (NOT numeric one): cmytelka
+*/
+
+#box {
+  padding: 10px;
+}
+
+#font {
+  position: relative;
+  left: 140px;
+}
+#textSize {
+  position: relative;
+  left: 200px;
+}
+
+#red {
+  position: relative;
+  left: 60px;
+}
+#green,
+#blue {
+  position: relative;
+  left: 134px;
+}
+
+button {
+  background-color: rgb(129, 35, 184);
+  color: rgb(109, 212, 253);
+  font-size: 12pt;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+td {
+  border: 2px solid black;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+#callList {
+  font-size: 16pt;
+}
+
+#nCalls {
+  color: mediumblue;
+}
